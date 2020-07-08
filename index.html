@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<html>
+    <link href="stylesheet2.css" type="text/css" rel="stylesheet2"/>
+    <head>
+        <meta charset=utf-8 />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+
+    <title>Easy Calculator</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <style type="text/css">
+        body {
+            margin: 30px;
+            background-color: turquoise;
+            color: rgb(7, 51, 180);
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        </style>
+</head>
+
+<body>
+<h1> Easy To Use Calculator</h1> 
+<script src="easycalculator/script.js"></script>
+<form name="calculator">
+    Input 1: <input type="text" id="firstNumber" /><br>
+    Input 2: <input type="text" id="secondNumber" /><br>
+    <input type="button" onClick="multiplyBy()" Value="*" />
+    <input type="button" onClick="divideBy()" Value="/" />
+    <input type="button" onClick="addBy()" Value="+" />
+    <input type="button" onClick="subtractBy()" Value="-" />
+    <br>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)"></br>
+        =<output name="x" for="a b"></output>
+      </form>
+  
+
+    
+
+</body>
+
+</html>
