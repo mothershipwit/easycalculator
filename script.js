@@ -1,9 +1,5 @@
-
-    var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
+var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
 $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap functionality
-
-
-  
 function multiplyBy(){
 
         num1 = document.getElementById("firstNumber").value;
