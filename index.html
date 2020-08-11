@@ -34,7 +34,7 @@
     <input type="button" id="add" onClick="addBy()" Value="+" />
     <input type="button" id="subtract" onClick="subtractBy()" Value="-" />
     <br>
-    =<h3 id="output" name="x" for="a b"></h3>
+    <h3 id="output" name="x" for="a b"></h3>
 
    <script>
        function multiplyBy(){
@@ -42,6 +42,7 @@
 num1 = document.getElementById("firstNumber").value;
 num2 = document.getElementById("secondNumber").value;
 document.getElementById("output").innerHTML = num1 * num2;
+document.getElementById("output").innerHTML = parseFloat(num1) * parseFloat(num2);
 }
 
 function divideBy() 
@@ -49,6 +50,7 @@ function divideBy()
 num1 = document.getElementById("firstNumber").value;
 num2 = document.getElementById("secondNumber").value;
 document.getElementById("output").innerHTML = num1 / num2;
+document.getElementById("output").innerHTML = parseFloat(num1) / parseFloat(num2);
 }
 
 function addBy()
@@ -64,6 +66,7 @@ function subtractBy()
 num1 = document.getElementById("firstNumber").value;
 num2 = document.getElementById("secondNumber").value;
 document.getElementById("output").innerHTML = num1 - num2;
+document.getElementById("output").innerHTML = parseFloat(num1) - parseFloat(num2);
 }
    </script>
 </body>

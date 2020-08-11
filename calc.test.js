@@ -52,4 +52,50 @@ describe('calculator', () => {
     expect(parseFloat(result.innerHTML)).toBe(5);
   })
 
+  test('can multiply two number', () => {
+
+    let firstNumber = form.querySelector("#firstNumber");
+    let secondNumber = form.querySelector("#secondNumber");
+
+    fireEvent.change(firstNumber, {target: { value: 3 } });
+    fireEvent.change(secondNumber, {target: { value: 2 } });
+
+    const button = getByText(form, '*');
+    fireEvent.click(button);
+
+    let result = form.querySelector("#output");
+    console.log(result);
+    expect(parseFloat(result.innerHTML)).toBe(6);
+  })
+
+  test('can divide two number', () => {
+
+    let firstNumber = form.querySelector("#firstNumber");
+    let secondNumber = form.querySelector("#secondNumber");
+
+    fireEvent.change(firstNumber, {target: { value: 4 } });
+    fireEvent.change(secondNumber, {target: { value: 2 } });
+
+    const button = getByText(form, '/');
+    fireEvent.click(button);
+
+    let result = form.querySelector("#output");
+    console.log(result);
+    expect(parseFloat(result.innerHTML)).toBe(2);
+  })
+  test('can subtract two number', () => {
+
+    let firstNumber = form.querySelector("#firstNumber");
+    let secondNumber = form.querySelector("#secondNumber");
+
+    fireEvent.change(firstNumber, {target: { value: 3 } });
+    fireEvent.change(secondNumber, {target: { value: 2 } });
+
+    const button = getByText(form, '-');
+    fireEvent.click(button);
+
+    let result = form.querySelector("#output");
+    console.log(result);
+    expect(parseFloat(result.innerHTML)).toBe(1);
+  })
 })
